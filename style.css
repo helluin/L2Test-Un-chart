@@ -1,0 +1,80 @@
+#content {
+    width: 100vw;
+    background-image: url(world-map-grey.png);
+    background-size: cover;
+}
+
+
+#button_container{
+ 
+    width:100vw;
+    height:10vh;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    z-index: 99999;
+}
+
+#drawing_area{ 
+    visibility:hidden;
+}
+
+
+svg {
+    width:100vw;
+    height:90vh;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.tick line {
+    shape-rendering: crispEdges;
+    stroke: rgb(200, 200, 200);
+    stroke-dasharray:2,3;
+    opacity: 0.5;
+}
+
+.tick text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    fill: rgb(140, 140, 140);
+}
+
+
+.domain {
+    fill: none;
+    stroke: black;
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    padding: 15px 24px 10px;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    font-family: "HelveticaNeueLTStd-Cn";
+    font-size: 1.06em;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 10px 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    background-color: #a0cd55;
+    color: white;
+    border-color: #a0cd55;
+    border: none;
+    text-align: center;
+    font-weight: 100;
+    opacity: 1;
+}
+
+button:hover,
+button:focus {
+    opacity: 0.5;
+    outline: none;
+}
