@@ -10,23 +10,23 @@
 
 <body>
     <div id="content">
-      
-            <div id="button_container" data-group="what">
-                <button class="button" data-group="I" id="group_1">Group I</button>
-                <button class="button" data-group="II" id="group_2">Group II</button>
-                <button class="button" data-group="III" id="gropu_3">Group III</button>
-                <button class="button" data-group="IV" id="gropu_4">Group IV</button>
-            </div>
-            <div id="svg_container">
-                <svg></svg>
-            </div>
-       
+
+        <div id="button_container" data-group="what">
+            <button class="button" data-group="I" id="group_1">Group I</button>
+            <button class="button" data-group="II" id="group_2">Group II</button>
+            <button class="button" data-group="III" id="gropu_3">Group III</button>
+            <button class="button" data-group="IV" id="gropu_4">Group IV</button>
+        </div>
+        <div id="svg_container">
+            <svg></svg>
+        </div>
+
     </div>
     <script>
         $(".button").on("click", function () {
             var groupSelected = $(this).data("group");
             console.log("button clicked for group: " + groupSelected);
-            selectGroup(groupSelected);
+            myManager.selectGroup(groupSelected);
         });
     </script>
     <script src="main.js"></script>
